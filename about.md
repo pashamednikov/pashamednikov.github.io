@@ -27,12 +27,12 @@ permalink: /about/
       		</div>
       		<div class="col-7 col-lg-8">
       		  <ul class="list-unstyled pb-3">
-      		    <li class="pb-2"><a href="https://infoculture.ru" target="_blank">АНО&nbsp;«Инфокультура»</a></li>
+      		    <li class="pb-2">АНО&nbsp;«Инфокультура»</li>
       		    <li>2014 — по&nbsp;настоящее время</li>
       		    <li>Веб-дизайнер, front-end  разработчик</li>
       		  </ul>
       		  <ul class="list-unstyled pb-3">
-      		    <li class="pb-2"><a href="http://fcisp.ru" target="_blank">ФКУ&nbsp;«ЦЭАИТ&nbsp;СП»</a></li>
+      		    <li class="pb-2">ФКУ&nbsp;«ЦЭАИТ&nbsp;СП»</li>
       		    <li>2019 — 2023</li>
       		    <li>Эксперт</li>
       		  </ul>
@@ -55,7 +55,7 @@ permalink: /about/
       		<div class="col-7 col-lg-8">
       		  <ul class="list-unstyled pb-3">
       		    <li class="pb-2">
-      		    	<a href="http://bmstu.ru" target="_blank">Московский государственный технический университет им.&nbsp;Н.Э.&nbsp;Баумана</a>
+      		    	Московский государственный технический университет им.&nbsp;Н.Э.&nbsp;Баумана
       		    </li>
       		    <li>2015</li>
       		    <li>Инженер по&nbsp;специальности: «Информатика и&nbsp;системы управления, Вычислительные машины, комплексы, системы и&nbsp;сети»</li>
