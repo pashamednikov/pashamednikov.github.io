@@ -1,0 +1,44 @@
+<!-- Modal -->
+<div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Заказать сайт</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="https://formspree.io/hello@pavelmednikov.com" method="POST" data-parsley-validate="">
+        <div class="modal-body">
+          <div class="form-group row">
+            <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+            <label for="formName">Ваше имя*</label>
+            <input type="text" name="full_name" class="form-control" id="formName" placeholder="Введите Ваше имя" required="">
+            </div>
+            <div class="col-12 col-sm-6 mb-3 mb-sm-0">
+              <label for="formEmail">E-mail*</label>
+              <input type="email" name="_replyto" class="form-control" id="formEmail" placeholder="Введите Ваш E-mail" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="formMessage">Текст сообщения*</label>
+            <textarea name="message" class="form-control" id="formMessage" rows="3" placeholder="Опишите проект" required=""></textarea>
+          </div>
+          <div class="form-group mb-0">
+            <p class="small mb-0">Нажимая на кнопку «Отправить сообщение», вы даете <a href="{{site.baseurl}}/agreement">согласие</a> на обработку своих персональных данных.</p> 
+          </div>
+
+          <input type="hidden" name="_subject" value="Весточка с сайта-портфолио">
+          <!-- <input type="hidden" name="__redirect" value="http://pavelmednikov.com/thanks"> -->
+          <input type="hidden" name="_next" value="http://pavelmednikov.com/thanks">
+          <input type="hidden" name="_language" value="ru" />
+      
+        </div>
+        <div class="modal-footer text-center">
+          <input class="btn" type="submit" value="Отправить сообщение"  onclick="yaCounter44663041.reachGoal('make_order'); return true;">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- END Modal -->

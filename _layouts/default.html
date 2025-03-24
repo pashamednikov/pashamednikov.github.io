@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru-RU" class="h-100">
+  <head>
+
+    <title>
+      {% if page.title_tab %}
+        {{page.title_tab}}
+      {% elsif page.title %}
+        {{page.title}}
+      {% else %}
+        {{site.title}}
+      {% endif %}
+    </title>
+
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="480">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+
+    <meta name="google-site-verification" content="om2dVE6xlLIYyUmQU0rt4_OqO2UNvYpBiRheg0-8Njk" />
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{site.url}}/favicon.ico">
+    <link rel="canonical" href=" {{site.url}}{{page.url}}" />
+
+    <!-- Open Graph --> 
+    <link rel="image_src" href="{{site.url}}/src/img/og.png">
+    {% if site.fb_app_id %}
+    <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
+    {% endif %}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{site.title}}">
+    <meta property="og:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}">
+    <meta property="og:description" content="{% if page.meta %} {{page.meta}} {% else %} {{site.description}} {% endif %}">
+    <meta property="og:locale" content="ru-RU">
+   	<meta property="og:image" content="{% if page.cover %} {{site.url}}/src/img/project_img/{{page.folder}}/{{page.cover}} {% else %} {{site.url}}/src/img/og.png {% endif %}">
+    <meta property="og:updated_time" content="{{site.time}}" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+    <meta name="twitter:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}" />
+    <meta name="twitter:description" content="{% if page.meta %} {{page.meta}} {% else %} {{site.description}} {% endif %}">
+    <meta name="twitter:image" content="{% if page.cover %} {{site.url}}/src/img/project_img/{{page.folder}}/{{page.cover}} {% else %} {{site.url}}/src/img/og.png {% endif %}" />
+    
+    <!-- rss feed -->
+    {% feed_meta %}
+
+    <!-- Yandex tableau -->
+    <meta name="yandex-tableau-widget" content="logo={{site.url}}/src/img/tableau.png, color=#f5f2f9" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{site.baseurl}}/src/styles/styles.css">
+    {% if page.style %}
+    <link rel="stylesheet" href="{{site.baseurl}}/src/styles/{{page.folder}}.css">
+    {% endif %}
+
+    <!-- JS -->
+    <script src="{{site.baseurl}}/src/js/emerge/emerge.js"></script>
+    <script src="{{site.baseurl}}/src/bootstrap-5.3.0/dist/js/bootstrap.min.js"></script>
+    
+
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+    <!--HEADER-->
+    {% include header.html %}
+    <!--END HEADER-->
+
+    <!--CONTENT-->
+    <main>
+      {{content}}
+    </main>   
+    <!--END CONTENT-->
+
+    <!-- CONTACTS -->
+    {% comment %}
+    {% include contacts.html %}
+    {% endcomment %}
+    <!-- END CONTACTS -->
+
+    <!--FOOTER-->
+    {% include footer.html %}
+    <!--END FOOTER-->
+
+    {% include ya-metrika.html %}
+
+    {% comment %}
+    {% include modal-contact-form.html %}
+    {% endcomment %}
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/vanilla-tilt.min.js"></script> -->
+
+    <script src="{{site.baseurl}}/src/js/facebook-sdk.js"></script>
+  </body>
+</html>

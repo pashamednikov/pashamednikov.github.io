@@ -1,0 +1,49 @@
+---
+layout: default
+title: Статьи
+title_tab: Блог Паши Медникова о дизайне
+---
+
+<!-- HERO -->
+<div class="container-fluid pt-5 pb-3">
+  <div class="row pb-4">
+    <div class="col-10">
+      <h1 class="lh-1 pb-3">{{page.title}}</h1>
+    </div>
+  </div>
+</div>
+<!-- END HERO -->
+
+
+
+<!-- BLOG POSTS -->
+<section class="blog-posts">
+  <div class="container-fluid">
+    <div class="row pb-4">
+      <div class="col-10">
+      {% if paginator.posts %}
+        {% for post in paginator.posts %}
+          <div class="row pb-5">
+            <div class="col-10 col-lg-6 fs-4">
+               <h3 class="mb-3"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+               {% if post.excerpt %}
+               <div>{{ post.excerpt }}</div>
+               {% endif %}
+               <div class="text-muted">{% include date.html %}</div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="fs-2">Статей пока нет</p>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+  {% include pagination.html %}
+</section>
+
+<!-- END BLOG POSTS -->
+
+
+
+
