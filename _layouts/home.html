@@ -105,8 +105,17 @@ layout: default
     </div>
 
     <!-- 3 center -->
-    {% assign media_mission = site.projects | where:"folder", "media_mission"  | first %}
+    {% assign cinemapark = site.projects | where:"folder", "cinemapark"  | first %}
     <div class="col-10 col-md-2 emerge" data-expose="true">
+      <div class="case position-relative">
+        <div class="case-img-sm mb-2">
+          <img src="{{site.baseurl}}/src/img/project_img/{{cinemapark.folder}}/{{cinemapark.cover}}" class="w-100" alt="Проект — {{cinemapark.title}}">
+        </div>  
+        <a href="{{site.baseurl}}{{cinemapark.url}}" class="stretched-link fs-4 fw-normal">{{cinemapark.title}}</a>
+      </div>
+    </div>
+    {% assign media_mission = site.projects | where:"folder", "media_mission"  | first %}
+    <div class="col-10 col-md-4 offset-md-1 emerge" data-expose="true">
       <div class="case position-relative">
         <div class="case-img-sm mb-2">
           <img src="{{site.baseurl}}/src/img/project_img/{{media_mission.folder}}/{{media_mission.cover}}" class="w-100" alt="Проект — {{media_mission.title}}">
@@ -115,21 +124,12 @@ layout: default
       </div>
     </div>
     {% assign rooms_kitchen = site.projects | where:"folder", "rooms_kitchen"  | first %}
-    <div class="col-10 col-md-4 offset-md-1 emerge" data-expose="true">
+    <div class="col-10 col-md-2 offset-md-1 emerge" data-expose="true">
       <div class="case position-relative">
         <div class="case-img-sm mb-2">
           <img src="{{site.baseurl}}/src/img/project_img/{{rooms_kitchen.folder}}/{{rooms_kitchen.cover}}" class="w-100" alt="Проект — {{rooms_kitchen.title}}">
         </div>  
         <a href="{{site.baseurl}}{{rooms_kitchen.url}}" class="stretched-link fs-4 fw-normal">{{rooms_kitchen.title}}</a>
-      </div>
-    </div>
-    {% assign cinemapark = site.projects | where:"folder", "cinemapark"  | first %}
-    <div class="col-10 col-md-2 offset-md-1 emerge" data-expose="true">
-      <div class="case position-relative">
-        <div class="case-img-sm mb-2">
-          <img src="{{site.baseurl}}/src/img/project_img/{{cinemapark.folder}}/{{cinemapark.cover}}" class="w-100" alt="Проект — {{cinemapark.title}}">
-        </div>  
-        <a href="{{site.baseurl}}{{cinemapark.url}}" class="stretched-link fs-4 fw-normal">{{cinemapark.title}}</a>
       </div>
     </div>
 

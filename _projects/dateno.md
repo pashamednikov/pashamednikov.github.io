@@ -42,9 +42,16 @@ description: Под крылом Инфокультуры нарисовал и�
 
 <div class="row pb-5 pt-3">
   <div class="col-10 emerge" data-expose="true">
+    <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/chips.png" class="img-fluid rounded mb-3" alt="Чипсы фильтров">
+  </div>
+</div>
 
-      <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/chips.png" class="img-fluid rounded mb-3" alt="Чипсы фильтров">
-
+<div class="row pb-5">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
+    <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/Sign-In-1280.png" class="img-fluid rounded mb-3" alt="Авторизация">
+  </div>
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
+    <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/Sign-Up-1280.png" class="img-fluid rounded mb-3" alt="Регистрация">
   </div>
 </div>
 
