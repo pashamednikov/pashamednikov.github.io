@@ -25,14 +25,32 @@ description: Нарисовал логотип. Сделал интро и об
 </div>
 
 <div class="container-fluid">
+
+  <div class="row pb-5">
+    <div class="col-10 pb-3">
+      <h3>Анимации</h3>
+      <p>Помимо интро разработаны перебивки и анимации информационных плашек для видео</p>
+    </div>
+    <div class="col-10 col-md-5 text-center emerge" data-expose="true">
+      <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/my-game-contest.gif" class="img-fluid rounded mb-3" alt="Конкурс">
+    </div>
+    <div class="col-10 col-md-5 pt-5 text-center emerge" data-expose="true">
+      <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/my-game-guf.gif" class="img-fluid rounded mb-3" alt="Плашки">
+    </div>
+    <!-- <div class="col-10 col-md-4 offset-md-1 text-center emerge" data-expose="true">
+      <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/my-game-guf.gif" class="img-fluid rounded mb-3" alt="Плашки">
+    </div> -->
+  </div>
+
   <div class="row pb-5">
     <div class="col-10 pb-3">
       <h3>Оформление канала</h3>
     </div>
-    <div class="col-10 text-center emerge">
+    <div class="col-10 text-center emerge" data-expose="true">
       <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/youtube.png" class="img-fluid rounded mb-3" alt="Лендинг">
     </div>
   </div>
+
 </div>
 
 

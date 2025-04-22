@@ -46,6 +46,8 @@ description: Под крылом Инфокультуры нарисовал и�
   </div>
 </div>
 
+Страницы авторизации и регистрации
+
 <div class="row pb-5">
   <div class="col-10 col-lg-5 emerge" data-expose="true">
     <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/Sign-In-1280.png" class="img-fluid rounded mb-3" alt="Авторизация">
@@ -55,6 +57,22 @@ description: Под крылом Инфокультуры нарисовал и�
   </div>
 </div>
 
+Личный кабинет
+
+<div class="row pb-5">
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
+    <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/MyDateno-1280.png" class="img-fluid rounded mb-3" alt="Личный кабинет">
+  </div>
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
+    <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/MyDateno-Search-History-1280.png" class="img-fluid rounded mb-3" alt="История поиска">
+  </div>
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
+    <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/MyDateno-Subscribe-1280.png" class="img-fluid rounded mb-3" alt="Подписки">
+  </div>
+  <div class="col-10 col-lg-5 emerge" data-expose="true">
+    <img src="{{site.baseurl}}/src/img/project_img/{{page.folder}}/MyDateno-Account-1280.png" class="img-fluid rounded mb-3" alt="Аккаунт">
+  </div>
+</div>
 
 
 
